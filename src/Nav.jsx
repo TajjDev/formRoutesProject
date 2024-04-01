@@ -1,5 +1,5 @@
 import  './Nav.css'
-import { Link } from 'react-router-dom'
+import { NavLink} from 'react-router-dom'
 import React from 'react';
 
 
@@ -14,31 +14,31 @@ export default function Nav (){
 
             <div className="navLinks">
                 <div className="links">
-                    <Link to={'/'}>
+                    <NavLink to={'/'}>
                         <div>Home</div>
-                    </Link>
+                    </NavLink>
 
-                    <Link to={'/about'}>
+                    <NavLink to={'/about'}>
                         <div>About</div>
-                    </Link>
+                    </NavLink>
 
-                    <Link to={'/services'}>
+                    <NavLink to={'/services'}>
                         <div>Services</div>
-                    </Link>
+                    </NavLink>
 
-                    <Link to={'/contact'}>
+                    <NavLink to={'/contact'}>
                         <div>Contact</div>
-                    </Link>
+                    </NavLink>
                     
                 </div>
                 <div className="linkBtn">
-                <Link to={'/login'}>
+                    <NavLink to={'/login'}>
                         <button>LogIn</button>
-                    </Link>
+                    </NavLink>
                     
-                    <Link to={'/'}>
+                    <NavLink to={'/'}>
                         <button>LogOut</button>
-                    </Link>
+                    </NavLink>
                 </div>
             </div>
         </div>
