@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import "./Login.css"
 
-export default function LoginForm({ formSubmit}) {
+export default function LoginForm() {
   const [formData, setFormData] = useState({
     username: '',
     email: '',
@@ -11,10 +11,8 @@ export default function LoginForm({ formSubmit}) {
 
  const HandleSubmit = (e) => {
   e.preventDefault();
-    console.log(formData);
     if (formData.username && formData.email && formData.password != "" ) {
-     formSubmit(formData) 
-
+    console.log(formData);
     } }
 
   const handleChange = (event) => {
