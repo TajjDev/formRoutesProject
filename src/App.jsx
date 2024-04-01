@@ -21,7 +21,7 @@ export default function App() {
           <Route path='/about' element={<About/>}/> 
           <Route path='/services' element={<Services/>}/> 
           <Route path='/contact' element={<Contact/>}/> 
-          <Route path='*' element={<Lost/>}></Route>
+          <Route path='https://form-routes-project.vercel.app/*' element={<Lost/>}></Route>
         </Routes>
       </BrowserRouter>
     </>
